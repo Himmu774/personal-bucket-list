@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header, footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #e0e0e0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        li.completed {
+            background: #b2f7b2;
+        }
+        li:hover {
+            background-color: #d3d3d3;
+        }
+        .icon {
+            font-size: 1.5rem;
+            color: green;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Bucket List</h1>
+    </header>
+    <div class="container">
+        <ul>
+            <li>Travel to Japan <span class="icon">&#x2713;</span></li>
+            <li>Learn to play the guitar <span class="icon">&#x2713;</span></li>
+            <li>Run a marathon</li>
+            <li>Write a novel</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Bucket List</p>
+    </footer>
+</body>
+</html>
